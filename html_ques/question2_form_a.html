@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="/submit_registration">
+
+        <div>
+            <label for="firstName">Full Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="lastName" name="lastName"><br><br>
+        </div>
+
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea><br><br>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+        </div>
+
+        <div>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Cricket">
+            <label for="hobby1">Cricket</label>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Movies">
+            <label for="hobby2">Movies</label>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Hockey">
+            <label for="hobby3">Hockey</label><br><br>
+        </div>
+
+        <div>
+            <label for="languages">Languages:</label>
+            <select name="languages" id="languages" multiple>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                
+            </select><br><br>
+        </div>
+        
+
+        <div>
+            <label for="skills">Skills:</label>
+            <select id="skills" name="skills">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label for="country">Country:</label>
+            <select id="country"  name="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+        </div>
+
+        <div>
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" id="cpassword" name="cpassword"><br><br>
+        </div>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
