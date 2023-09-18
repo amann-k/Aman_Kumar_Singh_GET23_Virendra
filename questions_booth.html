@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Coding Game</title>
+</head>
+<body>
+    <!-- Navigation Bar - Start -->
+    <!-- Hint: You can style the navigation bar for better aesthetics -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation Bar - End -->
+
+    <!-- Button Styles - Start -->
+    <!-- Hint: You can add styles to these buttons to make them visually appealing -->
+    <button class="btn-primary">Primary</button>
+    <button class="btn-secondary">Secondary</button>
+    <button class="btn-danger">Danger</button>
+    <!-- Button Styles - End -->
+
+    <!-- Form Design - Start -->
+    <!-- Hint: You can enhance the design of the form elements -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- New Password Field - Start -->
+        <!-- Hint: This is a password input field, you can style it for security -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <!-- New Password Field - End -->
+
+        <!-- Additional Feature - Start -->
+        <!-- Hint: You can style this input field as needed -->
+        <label for="additional">Additional Feature:</label>
+        <input type="text" id="additional" name="additional"><br><br>
+        <!-- Additional Feature - End -->
+
+        <!-- Submit Button - Start -->
+        <!-- Hint: Style the submit button to make it more attractive -->
+        <input type="submit" value="Submit">
+        <!-- Submit Button - End -->
+    </form>
+    <!-- Form Design - End -->
+
+    <!-- Modal/Popup - Start -->
+    <!-- Add modal HTML here -->
+    <!-- Hint: You can customize the modal styles and content -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+            <p>This is some text in the modal.</p>
+        </div>
+    </div>
+    <!-- Modal/Popup - End -->
+
+    <!-- Dropdown Menu -->
+    <!-- Add dropdown menu HTML here -->
+
+    <!-- Tabs -->
+    <!-- Add tab HTML here -->
+
+    <!-- Slider/Carousel -->
+    <!-- Add slider HTML here -->
+
+    <!-- Tooltip -->
+    <!-- Add tooltip HTML here -->
+
+    <!-- Progress Bar -->
+    <!-- Add progress bar HTML here -->
+
+    <!-- Responsive Layout -->
+    <!-- Add responsive layout HTML here -->
+    
+    <script>
+        // JavaScript for opening and closing the modal
+        const openModalBtn = document.getElementById('openModal');
+        const modal = document.getElementById('myModal');
+        const closeBtn = document.querySelector('.close');
+
+        openModalBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

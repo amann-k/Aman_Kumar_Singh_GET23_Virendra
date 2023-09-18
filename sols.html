@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Coding Game</title>
+    <style>
+        /* Navigation Bar - Start */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+
+            .navbar ul.show {
+                display: block;
+            }
+
+            .navbar li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        /* Navigation Bar - End */
+
+        /* Button Styles - Start */
+        .btn-primary,
+        .btn-secondary,
+        .btn-danger {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary:hover {
+            background-color: #505050;
+        }
+
+        .btn-danger:hover {
+            background-color: #b30000;
+        }
+        /* Button Styles - End */
+
+        /* Form Design - Start */
+        form {
+            margin: 20px;
+            max-width: 400px; /* Added to control form width */
+            padding: 20px; /* Added padding for spacing */
+            border: 1px solid #ccc; /* Added border for clarity */
+            border-radius: 5px; /* Added border radius for rounded corners */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #007bff;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        /* Form Design - End */
+
+        /* Modal/Popup - Start */
+        /* Add modal CSS here */
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+        }
+        /* Modal/Popup - End */
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Button Styles - Start -->
+    <button class="btn-primary">Primary</button>
+    <button class="btn-secondary">Secondary</button>
+    <button class="btn-danger">Danger</button>
+    <!-- Button Styles - End -->
+
+    <!-- Form Design - Start -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+       
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Form Design - End -->
+
+    <!-- Modal/Popup - Start -->
+    <!-- Add modal HTML here -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+            <p></p>
+        </div>
+    </div>
+    <!-- Modal/Popup - End -->
+
+    <!-- Dropdown Menu -->
+    <!-- Add dropdown menu HTML here -->
+
+    <!-- Tabs -->
+    <!-- Add tab HTML here -->
+
+    <!-- Slider/Carousel -->
+    <!-- Add slider HTML here -->
+
+    <!-- Tooltip -->
+    <!-- Add tooltip HTML here -->
+
+    <!-- Progress Bar -->
+    <!-- Add progress bar HTML here -->
+
+    <!-- Responsive Layout -->
+    <!-- Add responsive layout HTML here -->
+    
+    <script>
+        // JavaScript for opening and closing the modal
+        const openModalBtn = document.getElementById('openModal');
+        const modal = document.getElementById('myModal');
+        const closeBtn = document.querySelector('.close');
+
+        openModalBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
